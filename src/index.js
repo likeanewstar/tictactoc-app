@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Square extends React.Component {
-    /* constructor(props) {
+  /*
+  class Square extends React.Component {
+    constructor(props) {
       super(props); // JavaScript 클래스에서 하위 클래스의 생성자를 정의할 때 항상 super를 호출해야합니다. 모든 React 컴포넌트 클래스는 생성자를 가질 때 super(props) 호출 구문부터 작성해야 합니다.
       
       // 무언가를 “기억하기”위해 component는 state를 사용합니다.
       this.state = {
         value: null
       };
-    } */
+    }
     // Square은 게임의 상태를 유지할 필요가 없기 때문에 constructor를 삭제
 
     render() {
@@ -23,6 +24,15 @@ class Square extends React.Component {
         </button> // 업데이트 이후에 {this.state.value}가 X로 변화.
       );
     }
+  }
+  */
+
+  function Square(props) {
+    return (
+      <button className="square" onClick={props.onClick}>
+        {props.value}
+      </button>
+    );
   }
   
   class Board extends React.Component {
