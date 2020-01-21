@@ -2,14 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-<<<<<<< HEAD
   /*
   class Square extends React.Component {
-=======
-class Square extends React.Component {
-  /* ********************************* */
-    /*
->>>>>>> ac169651ce07ffe1eb65be79542901f4a7960c87
     constructor(props) {
       super(props); // JavaScript 클래스에서 하위 클래스의 생성자를 정의할 때 항상 super를 호출해야합니다. 모든 React 컴포넌트 클래스는 생성자를 가질 때 super(props) 호출 구문부터 작성해야 합니다.
       
@@ -18,10 +12,6 @@ class Square extends React.Component {
         value: null
       };
     }
-<<<<<<< HEAD
-=======
-    */
->>>>>>> ac169651ce07ffe1eb65be79542901f4a7960c87
     // Square은 게임의 상태를 유지할 필요가 없기 때문에 constructor를 삭제
 
     /*
